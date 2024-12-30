@@ -3,91 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songoku - Bot de WhatsApp</title>
+    <title>Gaming Zone</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            background-color: #1a1a1a;
+            color: white;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
+            background-color: #ff6600;
+            padding: 20px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
         }
         .container {
             padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
-        h1, h2 {
-            color: #333;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .section-title {
+            font-size: 28px;
+            color: #ff6600;
+            margin-bottom: 20px;
         }
         .feature {
-            background-color: white;
-            border-radius: 8px;
+            background-color: #333;
             padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            margin-top: 0;
+        }
+        .game-card {
+            background-color: #444;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: center;
             flex: 1;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .feature img {
+        .game-card img {
             width: 100%;
             border-radius: 8px;
+            max-width: 300px;
+        }
+        .game-card h4 {
+            color: #ff6600;
+            margin-top: 10px;
+        }
+        .games-section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
         footer {
             background-color: #333;
             color: white;
-            padding: 10px;
             text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Songoku - Bot de WhatsApp</h1>
-        <p>¡Tu asistente virtual en WhatsApp, siempre listo para ayudarte!</p>
+        <h1>Gaming Zone</h1>
+        <p>Todo sobre videojuegos, noticias y tendencias del mundo gamer.</p>
     </header>
 
+    <div class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#news">Noticias</a>
+        <a href="#games">Juegos</a>
+        <a href="#community">Comunidad</a>
+    </div>
+
     <div class="container">
-        <h2>¿Qué es Songoku?</h2>
-        <p>Songoku es un innovador bot de WhatsApp diseñado para hacer tu vida más fácil. Ya sea para responder preguntas, enviar recordatorios, o incluso hacer recomendaciones, Songoku está preparado para ofrecerte la mejor experiencia posible en WhatsApp.</p>
+        <section id="home">
+            <h2 class="section-title">Bienvenido a Gaming Zone</h2>
+            <p>En Gaming Zone encontrarás lo mejor del mundo de los videojuegos. Desde noticias, análisis, hasta las últimas tendencias. Prepárate para vivir la experiencia gamer al máximo.</p>
+        </section>
 
-        <h2>Características</h2>
-        <div class="content">
+        <section id="news">
+            <h2 class="section-title">Últimas Noticias</h2>
             <div class="feature">
-                <h3>Respuestas rápidas</h3>
-                <p>Songoku puede responder de manera instantánea a tus preguntas, desde consultas generales hasta temas más específicos.</p>
+                <h3>Nuevo Lanzamiento de "GameX"</h3>
+                <p>¡El juego más esperado del año ha llegado! GameX trae una experiencia de juego impresionante con gráficos realistas y una historia cautivadora.</p>
             </div>
             <div class="feature">
-                <h3>Asistente personal</h3>
-                <p>Organiza tus tareas, citas y eventos de forma sencilla. Songoku puede recordarte lo que necesitas hacer y a qué hora.</p>
+                <h3>Xbox Series X: Lo que debes saber</h3>
+                <p>Descubre todo lo que ofrece la nueva consola de Microsoft, con potencia mejorada, compatibilidad con juegos de generaciones anteriores y una experiencia de juego sin igual.</p>
             </div>
-            <div class="feature">
-                <h3>Recomendaciones inteligentes</h3>
-                <p>Songoku es capaz de ofrecerte recomendaciones personalizadas en función de tus gustos y preferencias, ya sea música, películas o cualquier otra cosa.</p>
+        </section>
+
+        <section id="games">
+            <h2 class="section-title">Juegos Populares</h2>
+            <div class="games-section">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Game Image">
+                    <h4>Fortnite</h4>
+                    <p>Un juego de batalla real con eventos en vivo y una jugabilidad divertida.</p>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Game Image">
+                    <h4>League of Legends</h4>
+                    <p>El juego de estrategia por equipos más popular. ¡Lucha por el control de la Grieta del Invocador!</p>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Game Image">
+                    <h4>Red Dead Redemption 2</h4>
+                    <p>Una aventura épica de mundo abierto en el lejano oeste. Con una historia envolvente y gráficos impresionantes.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <h2>¿Cómo usar Songoku?</h2>
-        <p>Solo tienes que agregar el número de Songoku a tu lista de contactos y enviarle un mensaje por WhatsApp. Una vez conectado, podrás comenzar a interactuar con él directamente.</p>
-
-        <h2>Contacto</h2>
-        <p>Si tienes preguntas o necesitas más información, no dudes en contactarnos. ¡Estamos aquí para ayudarte!</p>
-
-        <p><strong>Teléfono de contacto:</strong> +123 456 7890</p>
-        <p><strong>Correo electrónico:</strong> contacto@songokubot.com</p>
+        <section id="community">
+            <h2 class="section-title">Únete a la Comunidad</h2>
+            <p>Conéctate con otros gamers a través de nuestras redes sociales y foros. Comparte tus experiencias, consejos y dudas sobre los juegos que más te gustan.</p>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Songoku Bot. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Gaming Zone. Todos los derechos reservados.</p>
     </footer>
 
 </body>
