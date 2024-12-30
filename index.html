@@ -7,15 +7,30 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
         }
         .container {
             padding: 20px;
@@ -47,62 +62,86 @@
             padding: 10px;
             text-align: center;
         }
-        .video-container {
+        .button-container {
             text-align: center;
             margin: 20px 0;
         }
-        iframe {
-            width: 100%;
-            max-width: 800px;
-            height: 450px;
-            border: none;
+        .button-container a {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+        .novedades {
+            background-color: #e9f7df;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .futuras-caracteristicas {
+            background-color: #e9f7df;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Songoku - Bot de WhatsApp</h1>
+        <h1>SonGoku - Bot de WhatsApp</h1>
         <p>¡Tu asistente virtual en WhatsApp, siempre listo para ayudarte!</p>
     </header>
 
-    <div class="container">
-        <h2>¿Qué es Songoku?</h2>
-        <p>Songoku es un innovador bot de WhatsApp diseñado para hacer tu vida más fácil. Ya sea para responder preguntas, enviar recordatorios, o incluso hacer recomendaciones, Songoku está preparado para ofrecerte la mejor experiencia posible en WhatsApp.</p>
+    <div class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#futuras-caracteristicas">Futuras Características</a>
+        <a href="#contacto">Contacto</a>
+    </div>
 
-        <h2>Características</h2>
-        <div class="content">
-            <div class="feature">
-                <h3>Respuestas rápidas</h3>
-                <p>Songoku puede responder de manera instantánea a tus preguntas, desde consultas generales hasta temas más específicos.</p>
-            </div>
-            <div class="feature">
-                <h3>Asistente personal</h3>
-                <p>Organiza tus tareas, citas y eventos de forma sencilla. Songoku puede recordarte lo que necesitas hacer y a qué hora.</p>
-            </div>
-            <div class="feature">
-                <h3>Recomendaciones inteligentes</h3>
-                <p>Songoku es capaz de ofrecerte recomendaciones personalizadas en función de tus gustos y preferencias, ya sea música, películas o cualquier otra cosa.</p>
-            </div>
+    <div class="container" id="home">
+        <h2>¿Qué es SonGoku?</h2>
+        <p>SonGoku es un innovador bot de WhatsApp creado por YerTX2. Este bot está diseñado para facilitar la vida de los usuarios al interactuar con ellos de manera rápida, eficiente y amigable. SonGoku puede realizar diversas tareas, como responder preguntas, enviar recordatorios y ofrecer recomendaciones personalizadas.</p>
+
+        <div class="button-container">
+            <h3>Únete a nuestra comunidad</h3>
+            <a href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20unirme%20al%20grupo%20de%20SonGoku." target="_blank">Unirme al Grupo de WhatsApp</a>
+            <a href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20ver%20el%20canal%20de%20SonGoku." target="_blank">Ver Canal de WhatsApp</a>
         </div>
+    </div>
 
-        <h2>¿Cómo usar Songoku?</h2>
-        <p>Solo tienes que agregar el número de Songoku a tu lista de contactos y enviarle un mensaje por WhatsApp. Una vez conectado, podrás comenzar a interactuar con él directamente.</p>
-
-        <h2>Video sobre Songoku</h2>
-        <div class="video-container">
-            <iframe src="https://m.youtube.com/watch?v=PQbIJc7BAXE&pp=ygUQc29uIGdva3UgZWRpdCA0aw%3D%3D" title="Video de Songoku - Bot de WhatsApp"></iframe>
+    <div class="container" id="novedades">
+        <h2>Novedades del Bot</h2>
+        <div class="novedades">
+            <h3>Actualización Reciente</h3>
+            <p>SonGoku ha recibido una nueva actualización que mejora su capacidad para responder preguntas complejas. Ahora puedes obtener respuestas más rápidas y precisas sobre una variedad de temas, desde tecnología hasta entretenimiento.</p>
         </div>
+    </div>
 
+    <div class="container" id="futuras-caracteristicas">
+        <h2>Futuras Características</h2>
+        <div class="futuras-caracteristicas">
+            <h3>Integración con más plataformas</h3>
+            <p>SonGoku se está preparando para integrarse con otras plataformas de mensajería y redes sociales. Esto permitirá una experiencia más fluida para los usuarios que deseen interactuar con él a través de otros servicios.</p>
+            <h3>Personalización avanzada</h3>
+            <p>La próxima actualización permitirá a los usuarios personalizar las respuestas del bot según sus preferencias, ofreciendo una experiencia más personalizada.</p>
+        </div>
+    </div>
+
+    <div class="container" id="contacto">
         <h2>Contacto</h2>
-        <p>Si tienes preguntas o necesitas más información, no dudes en contactarnos. ¡Estamos aquí para ayudarte!</p>
-
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
         <p><strong>Teléfono de contacto:</strong> +123 456 7890</p>
         <p><strong>Correo electrónico:</strong> contacto@songokubot.com</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 Songoku Bot. Todos los derechos reservados.</p>
+        <p>&copy; 2024 SonGoku Bot. Todos los derechos reservados. Creado por YerTX2.</p>
     </footer>
 
 </body>
