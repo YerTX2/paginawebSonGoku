@@ -77,16 +77,31 @@
         .button-container a:hover {
             background-color: #0056b3;
         }
-        .novedades {
-            background-color: #e9f7df;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .futuras-caracteristicas {
+        .novedades, .futuras-caracteristicas {
             background-color: #e9f7df;
             padding: 15px;
             border-radius: 8px;
             margin-top: 20px;
+        }
+        /* Media Queries for responsive design */
+        @media (max-width: 768px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+                text-align: left;
+                padding: 10px 15px;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .feature {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+            .button-container a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
