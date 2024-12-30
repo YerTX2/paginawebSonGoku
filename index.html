@@ -3,162 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SonGoku - Bot de WhatsApp</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-            transition: background-image 0.3s ease;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: #2d2d2d;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 25px;
-            text-align: center;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .navbar a:hover {
-            background-color: #007bff;
-        }
-
-        /* Container */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* Section titles */
-        h2 {
-            color: #333;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        /* Button styles */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .button-container a {
-            background-color: #007bff;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .button-container a:hover {
-            background-color: #0056b3;
-            transform: translateY(-5px);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #2d2d2d;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <title>YerTX2 Gaming</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>SonGoku - Bot de WhatsApp</h1>
-        <p>Tu asistente virtual en WhatsApp, siempre listo para ayudarte.</p>
+        <div class="logo">YerTX2</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navbar Section -->
-    <div class="navbar">
-        <a href="#home">Inicio</a>
-        <a href="#novedades">Novedades</a>
-        <a href="#futuras-caracteristicas">Futuras Características</a>
-        <a href="#contacto">Contacto</a>
-    </div>
+    <main>
+        <section id="inicio" class="hero">
+            <h1>¡Bienvenido a YerTX2 Gaming!</h1>
+            <p>Tu portal hacia el gaming moderno con estilo.</p>
+            <a href="#sobre" class="btn">Descubre Más</a>
+        </section>
 
-    <!-- Home Section -->
-    <div class="container" id="home">
-        <h2>¿Qué es SonGoku?</h2>
-        <p>SonGoku es un innovador bot de WhatsApp creado por YerTX2. Este bot está diseñado para facilitar la vida de los usuarios al interactuar con ellos de manera rápida, eficiente y amigable. SonGoku puede realizar diversas tareas, como responder preguntas, enviar recordatorios y ofrecer recomendaciones personalizadas.</p>
+        <section id="sobre" class="sobre">
+            <h2>Sobre Mí</h2>
+            <p>YerTX2 es un espacio dedicado a la innovación y la pasión por los videojuegos. Aquí encontrarás contenido único, consejos y mucho más.</p>
+        </section>
+    </main>
 
-        <div class="button-container">
-            <a href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20unirme%20al%20grupo%20de%20SonGoku." target="_blank">Unirme al Grupo de WhatsApp</a>
-            <a href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20ver%20el%20canal%20de%20SonGoku." target="_blank">Ver Canal de WhatsApp</a>
-        </div>
-    </div>
-
-    <!-- Novedades Section -->
-    <div class="container" id="novedades">
-        <h2>Novedades del Bot</h2>
-        <p>SonGoku ha recibido una nueva actualización que mejora su capacidad para responder preguntas complejas. Ahora puedes obtener respuestas más rápidas y precisas sobre una variedad de temas, desde tecnología hasta entretenimiento.</p>
-    </div>
-
-    <!-- Futuras Características Section -->
-    <div class="container" id="futuras-caracteristicas">
-        <h2>Futuras Características</h2>
-        <p>SonGoku se está preparando para integrarse con otras plataformas de mensajería y redes sociales. Esto permitirá una experiencia más fluida para los usuarios que deseen interactuar con él a través de otros servicios.</p>
-    </div>
-
-    <!-- Contacto Section -->
-    <div class="container" id="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
-        <p><strong>Teléfono de contacto:</strong> +123 456 7890</p>
-        <p><strong>Correo electrónico:</strong> contacto@songokubot.com</p>
-    </div>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 SonGoku Bot. Todos los derechos reservados. Creado por YerTX2.</p>
+        <p>&copy; 2024 YerTX2. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        // JavaScript para cambiar el fondo mediante el parámetro 'bg' en la URL
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const bgImage = urlParams.get('https://i.ibb.co/RCB91Ms/file.jpg');
-            if (bgImage) {
-                document.body.style.backgroundImage = `url('${bgImage}')`;
-                document.body.style.backgroundSize = 'cover';
-                document.body.style.backgroundPosition = 'center';
-            }
-        }
-    </script>
-
 </body>
 </html>
