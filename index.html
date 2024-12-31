@@ -17,89 +17,96 @@
 
   <nav class="navbar">
     <ul>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#account">Cuenta</a></li>
-      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#about" class="tab-link" data-tab="about">Sobre mí</a></li>
+      <li><a href="#projects" class="tab-link" data-tab="projects">Proyectos</a></li>
+      <li><a href="#services" class="tab-link" data-tab="services">Servicios</a></li>
+      <li><a href="#account" class="tab-link" data-tab="account">Cuenta</a></li>
+      <li><a href="#contact" class="tab-link" data-tab="contact">Contacto</a></li>
     </ul>
   </nav>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Sobre mí</h2>
-      <p>Hola, soy <strong>YerTX2</strong>, un desarrollador apasionado por la programación y la creación de bots automatizados para WhatsApp que transforman procesos complejos en soluciones sencillas.</p>
-      <ul>
-        <li><strong>Habilidades:</strong> JavaScript, Python, Node.js, APIs.</li>
-        <li><strong>Experiencia:</strong> Más de 3 años en desarrollo backend y automatización.</li>
-      </ul>
+  <div id="tabs-container">
+    <!-- About Section -->
+    <div class="tab-content" id="about">
+      <section>
+        <h2>Sobre mí</h2>
+        <p>Hola, soy <strong>YerTX2</strong>, un desarrollador apasionado por la programación y la creación de bots automatizados para WhatsApp que transforman procesos complejos en soluciones sencillas.</p>
+        <ul>
+          <li><strong>Habilidades:</strong> JavaScript, Python, Node.js, APIs.</li>
+          <li><strong>Experiencia:</strong> Más de 3 años en desarrollo backend y automatización.</li>
+        </ul>
+      </section>
     </div>
-  </section>
 
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Proyectos</h2>
-      <div class="project-card">
-        <h3>Bot de WhatsApp</h3>
-        <p>Automatización avanzada para gestionar mensajes y conectarse con APIs externas.</p>
-        <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Automatización de Tareas</h3>
-        <p>Scripts para simplificar procesos repetitivos en backend.</p>
-        <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
-      </div>
+    <!-- Projects Section -->
+    <div class="tab-content" id="projects">
+      <section>
+        <h2>Proyectos</h2>
+        <div class="project-card">
+          <h3>Bot de WhatsApp</h3>
+          <p>Automatización avanzada para gestionar mensajes y conectarse con APIs externas.</p>
+          <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Automatización de Tareas</h3>
+          <p>Scripts para simplificar procesos repetitivos en backend.</p>
+          <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Creación de Bots Personalizados para WhatsApp.</li>
-        <li>Automatización de procesos con programación.</li>
-        <li>Desarrollo de APIs y soluciones backend.</li>
-        <li>Consultoría tecnológica.</li>
-      </ul>
-      <a href="#contact" class="btn">Solicitar Servicio</a>
+    <!-- Services Section -->
+    <div class="tab-content" id="services">
+      <section>
+        <h2>Servicios</h2>
+        <ul>
+          <li>Creación de Bots Personalizados para WhatsApp.</li>
+          <li>Automatización de procesos con programación.</li>
+          <li>Desarrollo de APIs y soluciones backend.</li>
+          <li>Consultoría tecnológica.</li>
+        </ul>
+        <a href="#contact" class="btn">Solicitar Servicio</a>
+      </section>
     </div>
-  </section>
 
-  <section id="account" class="account">
-    <div class="container">
-      <h2>Cuenta</h2>
-      <div class="form-container">
-        <!-- Crear cuenta -->
-        <form id="registerForm" class="form">
-          <h3>Crear Cuenta</h3>
-          <input type="text" placeholder="Nombre de usuario" required>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="password" placeholder="Contraseña" required>
-          <button type="submit" class="btn">Registrarse</button>
+    <!-- Account Section -->
+    <div class="tab-content" id="account">
+      <section>
+        <h2>Cuenta</h2>
+        <div class="form-container">
+          <!-- Crear cuenta -->
+          <form id="registerForm" class="form">
+            <h3>Crear Cuenta</h3>
+            <input type="text" placeholder="Nombre de usuario" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit" class="btn">Registrarse</button>
+          </form>
+
+          <!-- Iniciar sesión -->
+          <form id="loginForm" class="form">
+            <h3>Iniciar Sesión</h3>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit" class="btn">Iniciar Sesión</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="tab-content" id="contact">
+      <section>
+        <h2>Contacto</h2>
+        <form>
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu correo" required>
+          <textarea placeholder="Tu mensaje" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
         </form>
-
-        <!-- Iniciar sesión -->
-        <form id="loginForm" class="form">
-          <h3>Iniciar Sesión</h3>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="password" placeholder="Contraseña" required>
-          <button type="submit" class="btn">Iniciar Sesión</button>
-        </form>
-      </div>
+      </section>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo" required>
-        <textarea placeholder="Tu mensaje" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </div>
-  </section>
+  </div>
 
   <footer>
     <p>© 2024 YerTX2. Todos los derechos reservados.</p>
