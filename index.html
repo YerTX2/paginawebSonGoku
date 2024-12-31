@@ -1,117 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bots de WhatsApp y Proyectos - YerTX2</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="hero">
+<!-- Agregado al HTML: Pestaña de Cuenta y Contacto mejorada -->
+<section id="account" class="account">
     <div class="container">
-      <h1>Bots de WhatsApp y Proyectos de Programación</h1>
-      <p>Creado por <strong>YerTX2</strong>. Innovación, automatización y soluciones tecnológicas.</p>
-      <a href="#projects" class="btn">Explorar Proyectos</a>
-    </div>
-  </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about" class="tab-link" data-tab="about">Sobre mí</a></li>
-      <li><a href="#projects" class="tab-link" data-tab="projects">Proyectos</a></li>
-      <li><a href="#services" class="tab-link" data-tab="services">Servicios</a></li>
-      <li><a href="#account" class="tab-link" data-tab="account">Cuenta</a></li>
-      <li><a href="#contact" class="tab-link" data-tab="contact">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <div id="tabs-container">
-    <!-- About Section -->
-    <div class="tab-content" id="about">
-      <section>
-        <h2>Sobre mí</h2>
-        <p>Hola, soy <strong>YerTX2</strong>, un desarrollador apasionado por la programación y la creación de bots automatizados para WhatsApp que transforman procesos complejos en soluciones sencillas.</p>
-        <ul>
-          <li><strong>Habilidades:</strong> JavaScript, Python, Node.js, APIs.</li>
-          <li><strong>Experiencia:</strong> Más de 3 años en desarrollo backend y automatización.</li>
-        </ul>
-      </section>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="tab-content" id="projects">
-      <section>
-        <h2>Proyectos</h2>
-        <div class="project-card">
-          <h3>Bot de WhatsApp</h3>
-          <p>Automatización avanzada para gestionar mensajes y conectarse con APIs externas.</p>
-          <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Automatización de Tareas</h3>
-          <p>Scripts para simplificar procesos repetitivos en backend.</p>
-          <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
-        </div>
-      </section>
-    </div>
-
-    <!-- Services Section -->
-    <div class="tab-content" id="services">
-      <section>
-        <h2>Servicios</h2>
-        <ul>
-          <li>Creación de Bots Personalizados para WhatsApp.</li>
-          <li>Automatización de procesos con programación.</li>
-          <li>Desarrollo de APIs y soluciones backend.</li>
-          <li>Consultoría tecnológica.</li>
-        </ul>
-        <a href="#contact" class="btn">Solicitar Servicio</a>
-      </section>
-    </div>
-
-    <!-- Account Section -->
-    <div class="tab-content" id="account">
-      <section>
-        <h2>Cuenta</h2>
-        <div class="form-container">
-          <!-- Crear cuenta -->
-          <form id="registerForm" class="form">
-            <h3>Crear Cuenta</h3>
-            <input type="text" placeholder="Nombre de usuario" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
-            <button type="submit" class="btn">Registrarse</button>
-          </form>
-
-          <!-- Iniciar sesión -->
-          <form id="loginForm" class="form">
-            <h3>Iniciar Sesión</h3>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
-            <button type="submit" class="btn">Iniciar Sesión</button>
-          </form>
-        </div>
-      </section>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="tab-content" id="contact">
-      <section>
-        <h2>Contacto</h2>
-        <form>
-          <input type="text" placeholder="Tu nombre" required>
-          <input type="email" placeholder="Tu correo" required>
-          <textarea placeholder="Tu mensaje" required></textarea>
-          <button type="submit" class="btn">Enviar</button>
+      <h2>Cuenta</h2>
+      <div class="form-container">
+        <!-- Crear cuenta -->
+        <form id="registerForm" class="form">
+          <h3>Crear Cuenta</h3>
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit" class="btn">Registrarse</button>
         </form>
-      </section>
+
+        <!-- Iniciar sesión -->
+        <form id="loginForm" class="form">
+          <h3>Iniciar Sesión</h3>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit" class="btn">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Si tienes alguna consulta o deseas trabajar conmigo, ¡no dudes en ponerte en contacto!</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <div class="whatsapp-buttons">
+      <h3>Conéctate conmigo en WhatsApp</h3>
+      <a href="https://wa.me/1234567890" class="btn">Mi WhatsApp Personal</a>
+      <a href="https://chat.whatsapp.com/XXXXXX" class="btn">Grupo de WhatsApp</a>
+      <a href="https://wa.me/1234567890?text=¡Hola!%20Me%20interesa%20el%20canal." class="btn">Canal de WhatsApp</a>
     </div>
   </div>
+</section>
 
-  <footer>
-    <p>© 2024 YerTX2. Todos los derechos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<!-- Agregado al HTML: Sección Sobre mí mejorada -->
+<section id="about" class="about">
+  <div class="container">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy <strong>YerTX2</strong>, un desarrollador apasionado por la programación y la automatización. Mi especialidad es crear bots de WhatsApp y soluciones innovadoras para simplificar tareas y mejorar la eficiencia.</p>
+    <p>Con más de 3 años de experiencia en desarrollo backend, he trabajado en una variedad de proyectos que han transformado procesos complejos en soluciones simples. Me apasiona crear tecnologías que ayuden a las personas a ahorrar tiempo y mejorar sus flujos de trabajo.</p>
+    <p><strong>Habilidades:</strong> JavaScript, Python, Node.js, APIs, y más.</p>
+    <p><strong>Experiencia:</strong> He colaborado en varios proyectos, tanto personales como para clientes, incluyendo la creación de bots de WhatsApp para automatización, desarrollo de APIs y soluciones personalizadas.</p>
+    <ul>
+      <li><strong>Redes sociales:</strong> GitHub, LinkedIn.</li>
+      <li><strong>Proyectos destacados:</strong> Bot de WhatsApp, Automatización de tareas, y más.</li>
+    </ul>
+  </div>
+</section>
