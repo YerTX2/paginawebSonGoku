@@ -1,47 +1,110 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YerTX2 Gaming</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bots de WhatsApp y Proyectos - YerTX2</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">YerTX2</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre Mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="hero">
+    <div class="container">
+      <h1>Bots de WhatsApp y Proyectos de Programación</h1>
+      <p>Creado por <strong>YerTX2</strong>. Innovación, automatización y soluciones tecnológicas.</p>
+      <a href="#projects" class="btn">Explorar Proyectos</a>
+    </div>
+  </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <h1>¡Bienvenido a YerTX2 Gaming!</h1>
-            <p>Tu portal hacia el gaming moderno con estilo.</p>
-            <a href="#sobre" class="btn">Descubre Más</a>
-        </section>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#account">Cuenta</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
 
-        <section id="sobre" class="sobre">
-            <h2>Sobre Mí</h2>
-            <p>YerTX2 es un espacio dedicado a la innovación y la pasión por los videojuegos. Aquí encontrarás contenido único, consejos y mucho más.</p>
-        </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy <strong>YerTX2</strong>, un desarrollador apasionado por la programación y la creación de bots automatizados para WhatsApp que transforman procesos complejos en soluciones sencillas.</p>
+      <ul>
+        <li><strong>Habilidades:</strong> JavaScript, Python, Node.js, APIs.</li>
+        <li><strong>Experiencia:</strong> Más de 3 años en desarrollo backend y automatización.</li>
+      </ul>
+    </div>
+  </section>
 
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <p>Conéctate conmigo a través de WhatsApp:</p>
-            <div class="botones-contacto">
-                <a href="https://wa.me/tu-numero-de-whatsapp" target="_blank" class="btn">Canal de WhatsApp</a>
-                <a href="https://chat.whatsapp.com/tu-enlace-de-grupo" target="_blank" class="btn">Grupo de WhatsApp</a>
-            </div>
-        </section>
-    </main>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="project-card">
+        <h3>Bot de WhatsApp</h3>
+        <p>Automatización avanzada para gestionar mensajes y conectarse con APIs externas.</p>
+        <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Automatización de Tareas</h3>
+        <p>Scripts para simplificar procesos repetitivos en backend.</p>
+        <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 YerTX2. Todos los derechos reservados.</p>
-    </footer>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Creación de Bots Personalizados para WhatsApp.</li>
+        <li>Automatización de procesos con programación.</li>
+        <li>Desarrollo de APIs y soluciones backend.</li>
+        <li>Consultoría tecnológica.</li>
+      </ul>
+      <a href="#contact" class="btn">Solicitar Servicio</a>
+    </div>
+  </section>
+
+  <section id="account" class="account">
+    <div class="container">
+      <h2>Cuenta</h2>
+      <div class="form-container">
+        <!-- Crear cuenta -->
+        <form id="registerForm" class="form">
+          <h3>Crear Cuenta</h3>
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit" class="btn">Registrarse</button>
+        </form>
+
+        <!-- Iniciar sesión -->
+        <form id="loginForm" class="form">
+          <h3>Iniciar Sesión</h3>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit" class="btn">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 YerTX2. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
