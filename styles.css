@@ -176,3 +176,52 @@ footer {
   color: #8b949e;
   font-size: 0.9rem;
 }
+
+/* Media Queries */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container {
+    flex-direction: column;
+  }
+  .projects .project-card {
+    margin: 10px 0;
+    padding: 15px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas muy pequeñas (móviles más pequeños) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .form {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .form input {
+    padding: 10px;
+  }
+  .form button {
+    padding: 10px;
+  }
+}
