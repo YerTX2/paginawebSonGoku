@@ -1,133 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bots de WhatsApp y Proyectos - YerTX2</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <h1>proyectos de Programación</h1>
-      <p>Creado por <strong>YerTX2</strong>. Innovación, automatización y soluciones tecnológicas.</p>
-      <a href="#projects" class="btn">Explorar Proyectos</a>
-    </div>
-  </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#account">Cuenta</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Sobre mí</h2>
-      <p>Hola, soy <strong>YerTX2</strong>, un desarrollador apasionado por la programación y la creación de bots automatizados para WhatsApp que transforman procesos complejos en soluciones sencillas.</p>
-      <ul>
-        <li><strong>Habilidades:</strong> JavaScript,Ccs, Html, aprendiendo sobre las APIs.</li>
-        <li><strong>Experiencia:</strong> poco a poco aprendiendo sobre este mundo de la programación.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Proyectos</h2>
-      <div class="project-card">
-        <h3>Bot de WhatsApp</h3>
-        <p>Automatización avanzada para gestionar mensajes y conectarse con APIs externas.</p>
-        <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Automatización de Tareas</h3>
-        <p>Scripts para simplificar procesos repetitivos en backend.</p>
-        <a href="https://github.com/YerTX2" class="btn">Ver en GitHub</a>
+<section id="catalog" class="catalog">
+  <div class="container">
+    <h2>Catálogo de Bots de WhatsApp</h2>
+    <div class="product-list">
+      <!-- Cada producto será un "card" -->
+      <div class="product-card">
+        <img src="ruta_a_tu_imagen.jpg" alt="Bot de WhatsApp 1">
+        <h3>Bot de Respuestas Automáticas</h3>
+        <p>Este bot permite automatizar respuestas frecuentes en WhatsApp.</p>
+        <ul>
+          <li>Conexión con APIs externas.</li>
+          <li>Soporte para múltiples idiomas.</li>
+          <li>Integración con CRM.</li>
+        </ul>
+        <a href="#" class="btn">Ver más detalles</a>
       </div>
 
-      <!-- Video de YouTube incrustado -->
-      <div class="project-card">
-        <h3>Video de YouTube</h3>
-        <p>Uno de mis bots que desarrolle:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hbPw0D97LdI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="product-card">
+        <img src="ruta_a_tu_imagen_2.jpg" alt="Bot de WhatsApp 2">
+        <h3>Bot de Gestión de Pedidos</h3>
+        <p>Optimiza la gestión de pedidos y pagos automatizados por WhatsApp.</p>
+        <ul>
+          <li>Envío de facturas automáticas.</li>
+          <li>Seguimiento de pedidos en tiempo real.</li>
+          <li>Integración con plataformas de pago.</li>
+        </ul>
+        <a href="#" class="btn">Ver más detalles</a>
       </div>
     </div>
-  </section>
-
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Creación de Bots Personalizados para WhatsApp.</li>
-        <li>Automatización de procesos con programación.</li>
-        <li>Desarrollo de APIs y soluciones .</li>
-        <li>Consultoría tecnológica.</li>
-      </ul>
-      <a href="#contact" class="btn">Solicitar Servicio</a>
-
-      <!-- Reproductor de música -->
-      <div class="music-player">
-        <h3>Escucha algo de música mientras navegas</h3>
-        <audio controls>
-          <source src="musica/ChristianBasso&HaienQiu-Flowers.mp3 " type="audio/mp3">
-          Tu navegador no soporta el elemento de audio.
-        </audio>
-      </div>
-    </div>
-  </section>
-
-  <section id="account" class="account">
-    <div class="container">
-      <h2>Cuenta</h2>
-      <div class="form-container">
-        <!-- Crear cuenta -->
-        <form id="registerForm" class="form">
-          <h3>Crear Cuenta</h3>
-          <input type="text" placeholder="Nombre de usuario" required>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="password" placeholder="Contraseña" required>
-          <button type="submit" class="btn">Registrarse</button>
-        </form>
-
-        <!-- Iniciar sesión -->
-        <form id="loginForm" class="form">
-          <h3>Iniciar Sesión</h3>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="password" placeholder="Contraseña" required>
-          <button type="submit" class="btn">Iniciar Sesión</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo" required>
-        <textarea placeholder="Tu mensaje" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-
-      <!-- Botones de WhatsApp -->
-      <div class="whatsapp-buttons">
-        <a href="https://wa.me/TU_NUMERO_PERSONAL" target="_blank" class="btn">WhatsApp Personal</a>
-        <a href="https://chat.whatsapp.com/TU_GRUPO" target="_blank" class="btn">Grupo de WhatsApp</a>
-        <a href="https://wa.me/TU_CANAL" target="_blank" class="btn">Canal de WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2024 YerTX2. Todos los derechos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </div>
+</section>
