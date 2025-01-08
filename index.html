@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YerTX2 - Catálogo de Productos</title>
+  <title>YerTX2 - Catálogos</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,21 +11,23 @@
   <header class="header">
     <div class="container">
       <h1>YerTX2</h1>
-      <p>Innovación, tecnología y soluciones automatizadas</p>
+      <p>Innovación, tecnología y herramientas avanzadas</p>
     </div>
   </header>
 
   <nav class="navbar">
     <ul>
-      <li><a href="#catalog">Catálogo</a></li>
-      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#catalog1">Catálogo de Bots</a></li>
+      <li><a href="#catalog2">Catálogo de Kali Linux</a></li>
+      <li><a href="#about-kali">Sobre Kali Linux</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
   </nav>
 
-  <section id="catalog" class="catalog">
+  <!-- Catálogo 1: Bots -->
+  <section id="catalog1" class="catalog">
     <div class="container">
-      <h2>Catálogo de Productos</h2>
+      <h2>Catálogo de Bots para WhatsApp</h2>
       <div class="product-list">
         <div class="product-card">
           <img src="ruta_a_tu_imagen.jpg" alt="Bot de Respuestas Automáticas">
@@ -54,13 +56,57 @@
     </div>
   </section>
 
-  <section id="about" class="about">
+  <!-- Catálogo 2: Kali Linux -->
+  <section id="catalog2" class="catalog">
     <div class="container">
-      <h2>Sobre Nosotros</h2>
-      <p>En <strong>YerTX2</strong>, nos especializamos en crear soluciones tecnológicas personalizadas para automatizar procesos y mejorar la eficiencia. Ofrecemos bots avanzados para WhatsApp que transforman la manera de conectar con clientes.</p>
+      <h2>Catálogo de Herramientas Kali Linux</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="ruta_a_tu_imagen_kali.jpg" alt="Curso Básico de Kali Linux">
+          <h3>Curso Básico de Kali Linux</h3>
+          <p>Aprende a utilizar Kali Linux desde cero.</p>
+          <p class="price">$120.00 USD</p>
+          <a href="#" class="btn">Ver Detalles</a>
+        </div>
+
+        <div class="product-card">
+          <img src="ruta_a_tu_imagen_kali2.jpg" alt="Curso Avanzado de Kali Linux">
+          <h3>Curso Avanzado de Kali Linux</h3>
+          <p>Explora técnicas avanzadas de pruebas de penetración.</p>
+          <p class="price">$200.00 USD</p>
+          <a href="#" class="btn">Ver Detalles</a>
+        </div>
+
+        <div class="product-card">
+          <img src="ruta_a_tu_imagen_kali3.jpg" alt="Herramientas Premium">
+          <h3>Herramientas Premium</h3>
+          <p>Kit avanzado con herramientas exclusivas para pruebas de seguridad.</p>
+          <p class="price">$300.00 USD</p>
+          <a href="#" class="btn">Ver Detalles</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Información sobre Kali Linux -->
+  <section id="about-kali" class="about">
+    <div class="container">
+      <h2>¿Qué es Kali Linux?</h2>
+      <p>
+        Kali Linux es una distribución de Linux basada en Debian diseñada para pruebas de penetración, auditorías de seguridad y hacking ético. Es utilizada por profesionales de ciberseguridad para identificar y solucionar vulnerabilidades en sistemas informáticos.
+      </p>
+      <ul>
+        <li>Incluye herramientas como Nmap, Metasploit, y Wireshark.</li>
+        <li>Es mantenido por Offensive Security.</li>
+        <li>Compatible con una amplia variedad de dispositivos.</li>
+      </ul>
+      <p>
+        Aprender a usar Kali Linux no solo mejora tus habilidades técnicas, sino que también te brinda un enfoque profesional para proteger sistemas contra ataques maliciosos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contacto</h2>
@@ -70,6 +116,14 @@
         <textarea placeholder="Tu mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
+
+      <!-- Botón de WhatsApp -->
+      <div class="whatsapp-contact">
+        <a href="https://wa.me/51907376960" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+          Contáctanos por WhatsApp
+        </a>
+      </div>
     </div>
   </section>
 
