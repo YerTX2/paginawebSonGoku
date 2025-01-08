@@ -1,12 +1,95 @@
-.catalog {
-  background: #161b22;
-  padding: 50px 20px;
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0d1117;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-.catalog h2 {
+h1, h2, h3 {
   color: #58a6ff;
-  margin-bottom: 40px;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1f6feb;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #1f6feb, #58a6ff);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(88, 166, 255, 0.5);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0d1117, #1f2937);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background: #161b22;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.navbar ul li a:hover {
+  color: #1f6feb;
+}
+
+/* Catalog */
+.catalog {
+  padding: 50px 20px;
 }
 
 .product-list {
@@ -19,11 +102,16 @@
 .product-card {
   background: #21262d;
   border-radius: 8px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  width: 300px;
   padding: 20px;
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 300px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(88, 166, 255, 0.5);
 }
 
 .product-card img {
@@ -38,26 +126,21 @@
 }
 
 .product-card p {
-  margin-bottom: 15px;
   color: #bbb;
+  margin-bottom: 10px;
 }
 
-.product-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
+.product-card .price {
+  font-weight: bold;
+  color: #1f6feb;
+  margin-bottom: 15px;
 }
 
-.product-card ul li {
-  margin-bottom: 5px;
-  color: #aaa;
-}
-
-.product-card a.btn {
-  width: 100%;
+/* Footer */
+.footer {
+  background: #161b22;
+  padding: 10px 0;
   text-align: center;
-}
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  color: #bbb;
 }
