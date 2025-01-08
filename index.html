@@ -1,31 +1,80 @@
-<section id="catalog" class="catalog">
-  <div class="container">
-    <h2>Catálogo de Bots de WhatsApp</h2>
-    <div class="product-list">
-      <!-- Cada producto será un "card" -->
-      <div class="product-card">
-        <img src="ruta_a_tu_imagen.jpg" alt="Bot de WhatsApp 1">
-        <h3>Bot de Respuestas Automáticas</h3>
-        <p>Este bot permite automatizar respuestas frecuentes en WhatsApp.</p>
-        <ul>
-          <li>Conexión con APIs externas.</li>
-          <li>Soporte para múltiples idiomas.</li>
-          <li>Integración con CRM.</li>
-        </ul>
-        <a href="#" class="btn">Ver más detalles</a>
-      </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YerTX2 - Catálogo de Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>YerTX2</h1>
+      <p>Innovación, tecnología y soluciones automatizadas</p>
+    </div>
+  </header>
 
-      <div class="product-card">
-        <img src="ruta_a_tu_imagen_2.jpg" alt="Bot de WhatsApp 2">
-        <h3>Bot de Gestión de Pedidos</h3>
-        <p>Optimiza la gestión de pedidos y pagos automatizados por WhatsApp.</p>
-        <ul>
-          <li>Envío de facturas automáticas.</li>
-          <li>Seguimiento de pedidos en tiempo real.</li>
-          <li>Integración con plataformas de pago.</li>
-        </ul>
-        <a href="#" class="btn">Ver más detalles</a>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#catalog">Catálogo</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="catalog" class="catalog">
+    <div class="container">
+      <h2>Catálogo de Productos</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="ruta_a_tu_imagen.jpg" alt="Bot de Respuestas Automáticas">
+          <h3>Bot de Respuestas Automáticas</h3>
+          <p>Automatiza respuestas frecuentes y conecta con APIs.</p>
+          <p class="price">$50.00 USD</p>
+          <a href="#" class="btn">Ver Detalles</a>
+        </div>
+
+        <div class="product-card">
+          <img src="ruta_a_tu_imagen_2.jpg" alt="Bot de Gestión de Pedidos">
+          <h3>Bot de Gestión de Pedidos</h3>
+          <p>Gestiona pedidos y pagos automatizados por WhatsApp.</p>
+          <p class="price">$80.00 USD</p>
+          <a href="#" class="btn">Ver Detalles</a>
+        </div>
+
+        <div class="product-card">
+          <img src="ruta_a_tu_imagen_3.jpg" alt="Bot de Marketing">
+          <h3>Bot de Marketing</h3>
+          <p>Envía promociones y notificaciones automáticas a tus clientes.</p>
+          <p class="price">$100.00 USD</p>
+          <a href="#" class="btn">Ver Detalles</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>En <strong>YerTX2</strong>, nos especializamos en crear soluciones tecnológicas personalizadas para automatizar procesos y mejorar la eficiencia. Ofrecemos bots avanzados para WhatsApp que transforman la manera de conectar con clientes.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 YerTX2. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
